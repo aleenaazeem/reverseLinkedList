@@ -9,6 +9,12 @@ class linkedlist:
         new_node = Node(data)
         new_node.ref = self.head 
         self.head = new_node
+        print("****************")
+        print(new_node)
+        print("****************")
+        
+        
+
     def reverse(self): 
         previous = None  #previous is null
         current  = self.head #current is the head of the list
@@ -18,6 +24,7 @@ class linkedlist:
             previous = current #previous becomes current
             current = next #current becomes next 
         self.head = previous
+        print("****************")
         return previous
 
 
