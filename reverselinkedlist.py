@@ -25,20 +25,10 @@ class linkedlist:
             current = next #current becomes next 
         self.head = previous
         print("****************")
-        return previous
+        return previous   
+        //return to previous//
 
-     def reverse(self): 
-        previous = None  #previous is null
-        current  = self.head #current is the head of the list
-        while current: 
-            next = current.ref #next is adjacent to head
-            current.ref = previous #Previous becomes adjacent to head 
-            previous = current #previous becomes current
-            current = next #current becomes next 
-        self.head = previous
-        print("****************")
-        return previous
-
+     
 
 
 
