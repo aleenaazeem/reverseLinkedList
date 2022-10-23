@@ -1,4 +1,4 @@
-class Node:
+class Node: 
     def __init__(self,data):
         self.data = data
         self.ref = None
@@ -33,7 +33,7 @@ class linkedlist:
 
 
 LL1 = linkedlist()
-LL1.insert(2)
 LL1.insert(3)
-LL1.insert(4)
-LL1.reverse()
+LL1.insert(2)
+LL1.insert(5)
+LL1.reverse() # reversed linked list
