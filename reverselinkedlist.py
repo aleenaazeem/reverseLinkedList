@@ -13,8 +13,6 @@ class linkedlist:
         print(new_node)
         print("****************")
         
-        
-
     def reverse(self): 
         previous = None  #previous is null
         current  = self.head #current is the head of the list
@@ -27,6 +25,13 @@ class linkedlist:
         print("****************")
         return previous   
         //return to previous//
+
+        # Utility function to print the LinkedList
+    def printList(self):
+        temp = self.head
+        while(temp):
+            print (temp.data,end=" ")
+            temp = temp.next
 
      
 
