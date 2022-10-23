@@ -1,4 +1,4 @@
-class Node:
+class Node: 
     def __init__(self,data):
         self.data = data
         self.ref = None
@@ -13,8 +13,6 @@ class linkedlist:
         print(new_node)
         print("****************")
         
-        
-
     def reverse(self): 
         previous = None  #previous is null
         current  = self.head #current is the head of the list
@@ -28,12 +26,19 @@ class linkedlist:
         return previous   
         //return to previous//
 
+        # Utility function to print the LinkedList
+    def printList(self):
+        temp = self.head
+        while(temp):
+            print (temp.data,end=" ")
+            temp = temp.next
+
      
 
 
 
 LL1 = linkedlist()
-LL1.insert(2)
 LL1.insert(3)
-LL1.insert(4)
-LL1.reverse()
+LL1.insert(2)
+LL1.insert(5)
+LL1.reverse() # reversed linked list
